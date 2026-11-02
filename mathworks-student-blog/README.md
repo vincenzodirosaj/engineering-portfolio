@@ -39,7 +39,7 @@ The aircraft uses a **foldable V-tail** to transition from a rocket-like ascent 
 
 The team's physical vehicle used a **2 L PET propulsion bottle**, **0.7 L of water**, and a **10 bar initial pressure**. The design also incorporated a separate tank intended to introduce water sloshing during the competition.
 
-![Aircraft CAD model](Simulating-Water-Propelled-Aircraft-for-ASRW/Images/glider parts.jpeg)
+![Aircraft CAD model](Simulating-Water-Propelled-Aircraft-for-ASRW/Images/glider%20parts.jpeg)
 
 ## Simulation Results
 
