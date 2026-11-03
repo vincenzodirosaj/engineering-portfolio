@@ -1,62 +1,86 @@
 <p align="center">
-  <img src="assets/sur-trac-e-cover.png" alt="SUR-TRAC-E original project artwork" width="85%">
+  <img src="assets/sur-trac-e-cover.png" alt="SUR-TRAC-E — DefInSpace 2025" width="90%">
 </p>
 
 <h1 align="center">SUR-TRAC-E</h1>
-<p align="center"><strong>Space Surveillance & Tracking — Conceptual Mission Architecture</strong><br>
-DefInSpace 2025 · Space Sloths · Italian Technical Challenge selection winner · International semi-finalist</p>
+<p align="center"><strong>AI-Assisted Space Surveillance & Tracking</strong><br>
+Space Systems Engineering Concept · DefInSpace 2025 · Team Space Sloths</p>
 
-> **Project maturity: CONCEPT ONLY.** SUR-TRAC-E was proposed during the DefInSpace 2025 competition. No spacecraft, onboard AI pipeline, communication network, or operational surveillance capability was built or validated as part of this project.
+<p align="center"><strong>Italian Technical Challenge Winner · International Semi-Finalist</strong></p>
 
-## Overview
+## Mission overview
 
-SUR-TRAC-E (*Surveillance et Tracking de l'Espace*) is our team's proposal for a satellite-based space-surveillance service. The concept combines **hyperspectral, long-wave infrared (LWIR), and radio-frequency (RF) sensing** with onboard processing to detect potentially anomalous orbital behavior and prioritize alerts.
+**SUR-TRAC-E** (*Surveillance et Tracking de l'Espace*) explores a distributed, space-based approach to **Space Situational Awareness (SSA)** and the protection of strategic orbital assets. As satellite constellations expand, operators need to distinguish routine activity from potentially suspicious maneuvers, characterize objects of interest, and communicate relevant information rapidly.
 
-**[View the original competition presentation](./)** — the PDF is stored in this project folder alongside this README. Open the PDF from the GitHub file list above. *(This link intentionally points to the folder so it works regardless of the PDF's filename.)*
+Our proposal brings the first stages of surveillance and assessment **onboard a constellation of dedicated satellites**. Instead of relying exclusively on transmitting large volumes of raw observations for ground processing, SUR-TRAC-E combines complementary sensors and AI-assisted analysis to identify anomalies and prioritize actionable alerts.
 
-## Proposed spacecraft and payload
+**[View Project Presentation (PDF)](SurTracE%20presentation.pdf)**
 
-![Original proposed space-segment slide](assets/03_proposed-space-segment.jpg)
+## Proposed space segment
 
-The competition pitch proposes **24U satellites**, with **four spacecraft per orbital plane**, and complementary hyperspectral, LWIR, and RF observations. The architecture and payload selection were **conceptual choices**, not verified hardware specifications.
+![SUR-TRAC-E space segment — original competition slide](assets/03_proposed-space-segment.jpg)
 
-## Mission concept: detect → compute → alert
+The competition architecture envisaged **24U spacecraft**, arranged as **four satellites per orbital plane**. The team's working constellation scenario considered **three orbital planes (12 satellites total)**, with deployment designed to be scalable.
 
-![Original detect compute alert slide](assets/04_detect-compute-alert.jpg)
+Three complementary sensing modalities underpin the concept:
 
-Rather than transmitting every observation as raw data, the proposed workflow would identify an object or behavior of interest, process the observations onboard, and issue a prioritized alert for subsequent assessment.
+| Payload | Proposed purpose |
+| --- | --- |
+| **Hyperspectral imaging** | Detect and characterize objects or changes in the observed scene; provide an initial cue for further assessment. |
+| **Long-wave infrared (LWIR)** | Add thermal information when examining anomalous behavior or activity. |
+| **Radio-frequency (RF) sensing** | Observe RF signatures as an additional source of evidence for object characterization. |
 
-![Original proposed alert architecture slide](assets/05_alert-concept.jpg)
+The concept integrates these measurements with **onboard AI processing**, reducing dependence on continuous transmission of unfiltered sensor data.
 
-*Original team illustration of a proposed information flow. External systems mentioned in the slide were not integrated or tested.*
+## Operational concept — Detect · Compute · Alert
 
-## Implementation roadmap (proposed)
+![Detect, compute and alert — original competition slide](assets/04_detect-compute-alert.jpg)
 
-![Original proposed implementation roadmap](assets/07_roadmap.jpg)
+**1. Detect.** Observe an orbital region, identify an object or event of interest, and collect complementary sensor measurements.
 
-The pitch also considered staged deployment and preliminary cost planning. These were **competition-stage estimates**, not a funded or executed program.
+**2. Compute.** Process observations onboard and compare estimated behavior and signatures with available reference information. Multi-sensor evidence helps distinguish nominal activity from cases requiring closer examination.
 
-## Competition outcome
+**3. Alert.** Generate a prioritized alert containing the relevant assessment and supporting observations, then route it toward the ground-side decision-making chain.
 
-Our team **Space Sloths** won the Italian Technical Challenge selection and participated in the **international semi-finals in Paris (28 November 2025)**. This does **not** imply winning the international final.
+![Proposed alert system — original competition slide](assets/05_alert-concept.jpg)
 
-![DefInSpace 2025 International Technical Challenge semi-finalist certificate](assets/definspace-semi-finalist-certificate.jpg)
+The alert architecture was conceived to support **timely decision-making** while limiting unnecessary data transfer. The slide illustrates the intended information flow and its relationship to wider space-security operations.
 
-*Official semi-finalist certificate issued in Paris on 28 November 2025.*
+## Systems engineering considerations
 
-## My role
+Beyond the payload concept, our team examined the major system-level questions that determine whether such a service could be developed:
 
-**Strategic Researcher**, as credited in the original team presentation. This repository documents a **collaborative team concept**; the diagrams and slides represent the team's collective work.
+- **Coverage and scalability:** distribute satellites across orbital planes and expand the constellation in stages.
+- **Sensor complementarity:** combine spectral, thermal and RF evidence rather than depend on a single observation channel.
+- **Onboard processing vs. downlink:** prioritize high-value information while preserving the option to retrieve additional data.
+- **Operational integration:** design an alert-oriented information flow that could support existing ground-based monitoring and command systems.
+- **Feasibility:** frame a phased development roadmap, preliminary cost estimate and SWOT assessment.
 
-## Scope and evidence
+## Development roadmap and preliminary economics
 
-- **Included here:** selected original pitch slides and the official semi-finalist certificate, reproduced as images for quick viewing.
-- **In the project folder:** the original competition presentation PDF, uploaded separately.
-- **Not claimed:** functional code, satellite hardware, validated orbit simulations, tested AI, demonstrated alert latency, or integration with external systems.
+![Proposed development roadmap — original competition slide](assets/07_roadmap.jpg)
 
-### Public references
+The pitch outlined a phased progression from **feasibility study** and **preliminary design**, through **detailed design**, **integration and testing**, to **operations**. The accompanying high-level business assessment estimated a **€39.5 million** program cost in the competition scenario. These figures describe the proposed mission plan, not actual expenditure or a completed deployment.
+
+## DefInSpace 2025 — Competition outcome
+
+Developed by **Space Sloths** for the **DefInSpace 2025 Technical Challenge**, SUR-TRAC-E won the **Italian selection** and advanced to the **international semi-finals in Paris on 28 November 2025**.
+
+![Official international semi-finalist certificate](assets/definspace-semi-finalist-certificate.jpg)
+
+*International semi-finalist certificate — DefInSpace 2025.*
+
+## My contribution and team
+
+I participated as **Strategic Researcher**, as credited in the team's original pitch. The work was developed collaboratively by **Maria Mattiello, Pierluca De Felice, Raffaele Colamarino, Vincenzo Junior Di Rosa, and Corrado D'Urso**, with complementary responsibilities spanning payload, onboard computing, systems engineering, strategic research and mission analysis.
+
+## Project status
+
+**Conceptual mission architecture developed for a technical competition.** The repository presents the original proposal and selected pitch materials; it does not represent a deployed satellite system or flight-validated implementation.
+
+## References
 
 - [Distretto Aerospaziale della Campania — DefInSpace 2025](https://it.linkedin.com/posts/dac-distretto-aerospaziale-della-campania_talento-creativit%C3%A0-definspace2025-activity-7383039434528657408-FTGV)
 - [Commandement de l'Espace — DefInSpace semi-finalists](https://fr.linkedin.com/posts/commandement-de-lespace_definspace-activity-7382830475980992512-tPxD)
 
-*Images are taken from our original competition materials. Credit for team-authored content belongs to its respective contributors.*
+*All technical figures reproduced here are from the team's original competition presentation. This repository documents the competition concept and credits the collective work of its contributors.*
