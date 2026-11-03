@@ -8,6 +8,9 @@ Space Systems Engineering Concept · DefInSpace 2025 · Team Space Sloths</p>
 
 <p align="center"><strong>Italian Technical Challenge Winner · International Semi-Finalist</strong></p>
 
+> **Conceptual Mission Design** — SUR-TRAC-E is a space-surveillance system concept developed for DefInSpace 2025, exploring how a multi-sensor satellite constellation and onboard AI could support faster detection, assessment, and reporting of potentially anomalous orbital activity.
+
+
 ## Mission overview
 
 **SUR-TRAC-E** (*Surveillance et Tracking de l'Espace*) explores a distributed, space-based approach to **Space Situational Awareness (SSA)** and the protection of strategic orbital assets. As satellite constellations expand, operators need to distinguish routine activity from potentially suspicious maneuvers, characterize objects of interest, and communicate relevant information rapidly.
@@ -72,7 +75,7 @@ Developed by **Space Sloths** for the **DefInSpace 2025 Technical Challenge**, S
 
 ## My contribution and team
 
-I participated as **Strategic Researcher**, as credited in the team's original pitch. The work was developed collaboratively by **Maria Mattiello, Pierluca De Felice, Raffaele Colamarino, Vincenzo Junior Di Rosa, and Corrado D'Urso**, with complementary responsibilities spanning payload, onboard computing, systems engineering, strategic research and mission analysis.
+I contributed as **Strategic Researcher** and served as a **presenter and speaker during both the national and international competition stages**, communicating the team's mission concept, proposed architecture, and strategic rationale to the respective juries. The work was developed collaboratively by **Maria Mattiello, Pierluca De Felice, Raffaele Colamarino, Vincenzo Junior Di Rosa, and Corrado D'Urso**, with complementary responsibilities spanning payload, onboard computing, systems engineering, strategic research and mission analysis.
 
 ## Project status
 
